@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,6 +18,8 @@
     <title>Ismi-Portfolio</title>
 </head>
 <body>
+  <header>
+    <div class="home" id="home">
     <nav>
         <div class="hamburger">
           <div class="line"></div>
@@ -24,9 +27,9 @@
           <div class="line"></div>
         </div>
         <ul class="nav-links">
-          <a  href="#home" style="text-decoration:none"/>HOME</a>
-          <a  href="#about" style="text-decoration:none"/>ABOUT</a>
-          <a  href="#portfolio" style="text-decoration:none"/>PROJECTS</a>
+          <a  class="nav-item" href="#home" style="text-decoration:none"/>HOME</a>
+          <a  class="nav-item" href="#about" style="text-decoration:none"/>ABOUT</a>
+          <a   class="nav-item" href="#portfolio" style="text-decoration:none"/>PROJECTS</a>
         </ul>
       </nav>
     <div class="sidenav">
@@ -35,9 +38,14 @@
         <a href = "mailto:ismiandhykawaty@icloud.com"><i class="far fa-envelope"></i></a>
         <a href="tel:046-828-7578"><i class="fas fa-phone-alt"></i></a>
       </div>
-      <h1 class="rainbow-text">Ismi Andhyka</h1>
+      <div class="intro" data-aos="fade-right">
+        <h1 class="rainbow-text">Ismi Andhyka</h1>
+        <img class="logo" src="./assets/junior .png" width="300" height="200">
+      </div>
+    </div>
+</header>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f6c11e" fill-opacity="1" d="M0,320L1440,96L1440,320L0,320Z"></path></svg>
-      <div class="about" id="about">
+      <div class="about" id="about" >
         <h1 class="h1-animation">About Me</h1>
           <p class="p-about">
             Hi, I'm Ismi! A new front-end developer based in Ghent, Belgium.
@@ -47,7 +55,7 @@
              knowledge to help me to make more user friendly applications and websites. Currently my front-end skills include React, HTML, 
              CSS, JavaScript and Bootstrap. More in the learning! .</p>
         <div class="about-content">
-        <div class="logo-skills">
+        <div class="logo-skills" data-aos="fade-right">
           <h3 class="project-title">Languages & Tools</h3>
           <img  alt="HTML5" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
           <img alt="CSS3" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> 
@@ -56,10 +64,10 @@
           <img  alt="React" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
           <img  alt="React" width="35px" margin-botom="20px" src="https://raw.githubusercontent.com/IsmiAndhyka18/test-web/main/kisspng-adobe-creative-cloud-adobe-systems-adobe-photoshop-logo-adobe-5b1840fa137bc6.4671791715283161540798.png" />  
         </div>
-        <div class="cv" >
+        <div class="cv" data-aos="fade-left">
           <h3 class="project-title">Download CV</h3>
           <a href="./assets/ismienglishCV.pdf" download>
-            <img alt="ismi-cv" src="./assets/cv ismi.jpg" width="100" height="100">
+            <img class="zoom" alt="ismi-cv" src="./assets/cv ismi.jpg" width="100" height="100">
           </a>
         </div>
       </div>
@@ -72,7 +80,7 @@
       <div class="container" data-aos="fade-left">
           <div class="row">
               <div class="col-lg-12 text-center">
-           
+    
               </div>
           </div>
           <div class="row">
@@ -86,7 +94,7 @@
                       <img class="img-fluid" src="https://raw.githubusercontent.com/IsmiAndhyka18/test-web/main/culturd.png" alt="">
                   </a>
                   <div class="portfolio-caption">
-                      <h4>E-commerce</h4>
+                      <h4>Culturd Workshop</h4>
                       <p class="text-muted">React</p>
                   </div>
               </div>
@@ -100,7 +108,7 @@
                       <img class="img-fluid" src="https://raw.githubusercontent.com/IsmiAndhyka18/test-web/main/hoholiday.png" alt="">
                   </a>
                   <div class="portfolio-caption">
-                      <h4>Whack Game</h4>
+                      <h4>Whack an Aliens</h4>
                       <p class="text-muted">JavaScript</p>
                   </div>
               </div>
@@ -114,7 +122,7 @@
                       <img class="img-fluid" src="https://raw.githubusercontent.com/IsmiAndhyka18/test-web/main/coctails%20bar.png" alt="">
                   </a>
                   <div class="portfolio-caption">
-                      <h4>Menu Form</h4>
+                      <h4>coctails and Sushi Menu</h4>
                       <p class="text-muted">PHP</p>
                   </div>  
               </div>
@@ -125,34 +133,24 @@
   </section>
      
       <div class="contact" id="contact">
-        <h1 class="h1-animation">GET IN TOUCH</h1>
-        <div class="socialmedia centering">
-          <div class="wrapper" >
-            <div class="icon linkedin">
-              <div class="tooltip">linkedin</div>
-             <a href="https://www.linkedin.com/in/ismiandhykawati/"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="icon github">
-                <div class="tooltip">Github</div>
-               <a href="https://github.com/IsmiAndhyka18"><i class="fab fa-github"></i></a>
-              </div>
-            <div class="icon twitter">
-                <div class="tooltip">0468287578</div>
-                <a href="tel:046-828-7578"><i class="fas fa-phone-alt"></i></a>
-              </div>
-            <div class="icon youtube">
-              <div class="tooltip">Email</div>
-              <a href = "mailto:ismiandhykawaty@icloud.com"><i class="far fa-envelope"></i></a>
-            </div>
-            <div class="icon instagram">
-                <div class="tooltip">Instagram</div>
-                <span><i class="fab fa-instagram"></i></span>
-              </div>
+          <div class="contact-title">
+            <h2 class="h1-animation">GET IN <br> TOUCH</h2>
           </div>
-        </div>
+          <div class="contact-info">
+                 <p>
+                  <i class="fas fa-phone-alt"></i><a href="tel:+32468287578">+32 468 287 578</a>
+                </p>
+                  <div class="contact-email-container">
+                    <p id="email">
+                      <i class="far fa-envelope-open"></i>
+                      <a href="mailto:ismiandhykawaty@icloud.com">ismiandhykawaty@icloud.com</a>
+                    </p>
+                  </div>
+                      <a href="https://www.linkedin.com/in/ismiandhykawati/" target="_blank">
+                       <i class="fab fa-linkedin-in">https://www.linkedin.com/in/ismiandhykawati/</i></a>
+          </div>
       </div>
-        <h2 class="coded"> ©2021 Coded and designed by Ismi Andhyka</h2>
-        <a href="#home" class="fas fa-arrow-circle-up" id="arrow-up" style="font-size:50px;color:#be9c82;text-decoration:none;"></a>
+        <a href="#home" class="fas fa-arrow-circle-up" id="arrow-up" style="font-size:50px;color:#a2c353;text-decoration:none;"></a>
         
 <!-- Modal 1 -->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -172,8 +170,8 @@
                           
                             <p class="item-intro text-muted">Coded in React is an a group project</p>
                             <video autoplay loop muted playsinline src="./assets/culturd.mp4" width="100%"></video>
-                            <p>In this project, I coordinated with other developers to modified the front end of the website. and i did most of the design and detais in the Culturd workshop part</p>
-                            <a class="btn btn-primary" target='_blank' href=" https://github.com/IsmiAndhyka18/culturd"> MORE DETAILS</a>
+                            <p class="text">In this project, I coordinated with other developers to modified the front end of the website. and i did most of the design and detais in the Culturd workshop part</p>
+                            <a class="btn btn-primary" target='_blank' href=" https://github.com/IsmiAndhyka18/culturd"> VIEW CODE</a>
                            
                                 
                         </div>
@@ -201,8 +199,8 @@
                             
                             <p class="item-intro text-muted">Whack an Aliens with with friends and get some fun.</p>
                             <video autoplay loop muted playsinline src="./assets/whack.mp4" width="100%"></video>
-                            <p>In this project, I coordinated with other developers colaborate to make games websites during holiday time.</p>
-                            <a class="btn btn-primary" target='_blank' href="">MORE DETAILS</a>
+                            <p class="text">In this project, I coordinated with other developers colaborate to make games websites during holiday time.</p>
+                            <a class="btn btn-primary" target='_blank' href="">VIEW CODE</a>
                            
                         </div>
                     </div>
@@ -227,8 +225,8 @@
                             <!-- Project Details Go Here -->
                             <p class="item-intro text-muted">Coded in PHP coding and Lets order some sushi and coctails</p>
                             <video autoplay loop muted playsinline src="./assets/orde-form.mp4" width="100%"></video>
-                            <p>In this project i need to build order form for restaurant and i pick one is to make " THE YOLO SUSHI & COCKTAIL BAR ".</p>
-                                <a class="btn btn-primary" target='_blank' href="">MORE DETAILS</a>    
+                            <p class="text">In this project i need to build order form for restaurant and i pick one is to make " THE YOLO SUSHI & COCKTAIL BAR ".</p>
+                                <a class="btn btn-primary" target='_blank' href="">VIEW CODE</a>    
                         </div>
                     </div>
                 </div>

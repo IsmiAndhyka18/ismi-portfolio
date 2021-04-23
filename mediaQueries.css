@@ -1,0 +1,127 @@
+/* Responsive*/
+@media screen and (max-width: 1024px) {
+    .rainbow-text {
+      font-size: 5rem;
+    }
+  
+    .contact {
+      padding: 0 10%;
+    }
+  }
+  
+  @media screen and (max-width: 785px) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      height: auto;
+    }
+  
+    .rainbow-text {
+      font-size: 5rem;
+      margin: 80px auto;
+    }
+  
+    .logo {
+      width: 30%;
+      position: absolute;
+      top: 38%;
+      right: 5%;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin-left: 50px;
+      margin-right: 50px;
+      order: 2;
+    }
+  
+    .coded {
+      padding-top: 40px;
+    }
+    .portfolio-grid {
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .line {
+      width: 30px;
+      height: 3px;
+      background: rgb(85, 43, 43);
+      margin: 5px;
+    }
+    nav {
+      position: relative;
+    }
+  
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 4;
+    }
+  
+    .nav-links {
+      position: fixed;
+      background: #ebe7e3;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(10px at 90% -10%);
+      -webkit-clip-path: circle(10px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      background: #ebe7e3;
+      clip-path: circle(1500px at 90% -10%);
+      -webkit-clip-path: circle(1500px at 90% -10%);
+      pointer-events: all;
+      z-index: 3;
+    }
+  
+    .nav-links li a {
+      font-size: 25px;
+    }
+    .contact {
+      flex-direction: column;
+      padding: 10% 0;
+      height: auto;
+    }
+    .contact-info {
+      margin: 2rem;
+    }
+  }
+  @media (min-width: 767px) {
+    #portfolio .portfolio-item {
+      margin: 0 0 30px;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .portfolio-grid {
+      height: auto;
+    }
+  
+    .contact-info {
+      font-size: 0.8rem;
+    }
+    .contact-info {
+      margin-bottom: 4rem;
+    }
+  }
+  

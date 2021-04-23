@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 body{
   background-color: #f6f1eb;
- 
+  background-image: url(./assets/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
   
 }
+
 
 header{
   height: 600px;
@@ -219,7 +225,7 @@ h1 {
 
 
 .rainbow-text {
-
+  font-family: 'Limelight', cursive;
   margin: 100px;
   margin-right: -500px;
   background: #CA4246;
@@ -326,6 +332,11 @@ h1 {
   display: flex;
   justify-content: space-around;
   
+}
+
+
+.sign{
+  margin-left: 400px;
 }
 
 
@@ -437,8 +448,8 @@ font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   
   
   img:hover {
-    -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.3); 
   }
   
@@ -455,12 +466,12 @@ font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   .contact {
     border-top: 1px solid #a7d7d9;
     background-color: #f6f1eb;
-    background-image: url(./assets/bg5.png);
+    background-image: url(./assets/bg1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center;
-    background-size:80% 90%;
-    height: 300px;
+    background-size:cover;
+    height: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -470,7 +481,7 @@ font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .contact-info {
     color: #e9412d;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-right: 300px;
 
   }
@@ -486,7 +497,7 @@ font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .contact-title{
     justify-content: space-around;
-    margin: 80px auto;
+    margin: 40px auto;
     margin-left: 330px;
   }
 

@@ -10,7 +10,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--JQuery-->   
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>   
+    <!--Floating WhatsApp css-->   
+    <link rel="stylesheet" href="floating-wpp.min.css">   
+    <!--Floating WhatsApp javascript-->   
+    <script type="text/javascript" src="floating-wpp.min.js"></script> 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -40,7 +45,7 @@
       </div>
       <div class="intro" data-aos="fade-right">
         <h1 class="rainbow-text">Ismi Andhyka</h1>
-        <img class="logo" src="./assets/junior .png" width="300" height="200">
+        <img class="logo" src="./assets/junior .png">
       </div>
     </div>
 </header>
@@ -64,11 +69,12 @@
           <img  alt="React" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
           <img  alt="React" width="35px" margin-botom="20px" src="https://raw.githubusercontent.com/IsmiAndhyka18/test-web/main/kisspng-adobe-creative-cloud-adobe-systems-adobe-photoshop-logo-adobe-5b1840fa137bc6.4671791715283161540798.png" />  
         </div>
-        <div class="cv" data-aos="fade-left">
+        <div  data-aos="fade-left">
           <h3 class="project-title">Download CV</h3>
           <a href="./assets/ismienglishCV.pdf" download>
-            <img alt="ismi-cv" src="./assets/cv ismi.jpg" width="100" height="100">
+            <img  class="cv" alt="ismi-cv" src="./assets/cv ismi.jpg" width="100" height="100">
           </a>
+          <div id="WAButton"></div>  
         </div>
       </div>
     </div>
@@ -122,7 +128,7 @@
                       <img class="img-fluid" src="https://raw.githubusercontent.com/IsmiAndhyka18/test-web/main/coctails%20bar.png" alt="">
                   </a>
                   <div class="portfolio-caption">
-                      <h4>coctails and Sushi Menu</h4>
+                      <h4>Cocktail and Sushi Bar</h4>
                       <p class="text-muted">PHP</p>
                   </div>  
               </div>
@@ -150,7 +156,7 @@
                        <i class="fab fa-linkedin-in">https://www.linkedin.com/in/ismiandhykawati/</i></a>
           </div>
       </div>
-        <a href="#home" class="fas fa-arrow-circle-up" id="arrow-up" style="font-size:50px;color:#a2c353;text-decoration:none;"></a>
+        <a href="#home" class="fas fa-arrow-circle-up" id="arrow-up" style="font-size:50px;color:#e9412d;text-decoration:none;"></a>
         
 <!-- Modal 1 -->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

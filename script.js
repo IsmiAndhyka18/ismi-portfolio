@@ -2,10 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-// AOS.init({
-//   offset: 370,
-//   duration: 1000,
-// });
+
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
@@ -16,3 +13,5 @@ hamburger.addEventListener("click", () => {
     });
   });
 });
+
+

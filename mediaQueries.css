@@ -1,7 +1,7 @@
 /* Responsive*/
 @media screen and (max-width: 1024px) {
     .rainbow-text {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   
     .contact {
@@ -19,7 +19,7 @@
     }
   
     .rainbow-text {
-      font-size: 5rem;
+      font-size: 4rem;
       margin: 80px auto;
     }
   
@@ -49,6 +49,10 @@
   }
   
   @media screen and (max-width: 768px) {
+    .rainbow-text {
+      font-size: 5rem;
+     
+    }
     .line {
       width: 30px;
       height: 3px;
@@ -114,6 +118,10 @@
     }
   }
   @media screen and (max-width: 425px) {
+    .rainbow-text {
+      font-size: 4rem;
+     
+    }
     .portfolio-grid {
       height: auto;
     }
@@ -125,4 +133,19 @@
       margin-bottom: 4rem;
     }
   }
+  @media screen and (max-width: 320px) {
+    .rainbow-text {
+      font-size:3rem;
+     
+    
+  }
+
+  .logo {
+    width: 30%;
+    position: absolute;
+    top: 34%;
+    right: 5%;
+  }
   
+  
+}

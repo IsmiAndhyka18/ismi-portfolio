@@ -15,7 +15,7 @@ body {
 h1 {
   font-family: "Fredoka One", cursive;
   font-weight: 800;
-  font-size: 12em;
+  font-size: 10em;
   width: 5em;
   line-height: 0.9em;
   margin-left: auto;
@@ -87,8 +87,8 @@ nav {
 .logo {
   width: 15%;
   position: absolute;
-  top: 60%;
-  right: 5%;
+  top: 55%;
+  right: 18%;
 }
 .logo {
   -webkit-transform-origin: 50% 0;
@@ -115,7 +115,7 @@ nav {
     #a2c353 83.333%,
     #b0d9df 83.333%
   );
-  background-size: 57%;
+
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

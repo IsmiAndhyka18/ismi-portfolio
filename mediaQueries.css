@@ -1,7 +1,14 @@
 /* Responsive*/
 @media screen and (max-width: 1024px) {
     .rainbow-text {
-      font-size: 4rem;
+      font-size: 6rem;
+    }
+
+    .logo {
+      width: 25%;
+      position: absolute;
+      top: 36%;
+      right: 15%;
     }
   
     .contact {

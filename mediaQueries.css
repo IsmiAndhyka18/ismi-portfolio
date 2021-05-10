@@ -1,5 +1,10 @@
 /* Responsive*/
 @media screen and (max-width: 1024px) {
+  .main-navigation ul {
+    display: none;
+  }
+  
+  
     .rainbow-text {
       font-size: 6rem;
     }
@@ -118,6 +123,7 @@
   }
   @media screen and (max-height: 450px) {
     .sidenav {
+      width: 30%;
       padding-top: 15px;
     }
     .sidenav a {

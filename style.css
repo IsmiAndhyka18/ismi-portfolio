@@ -62,7 +62,7 @@ nav {
 .sidenav {
   height: 40vh;
   position: fixed;
-  z-index: 2;
+  z-index: 99;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -78,6 +78,8 @@ nav {
 .sidenav a:hover {
   color: #f3a67e;
 }
+
+
 
 /* name section css */
 .intro {
